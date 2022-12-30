@@ -1,0 +1,135 @@
+.container{
+    height: 45.1rem;
+    background: linear-gradient(to right, 
+    white 0%,
+    white 35%,
+    #5352ED 35%,
+    #5352ED 100% );
+
+   
+
+    img{
+        display: flex;
+        float: right;
+        margin-right: 14rem;
+        top: 13.1rem;
+        position: relative;
+    }
+}
+
+.page-title{
+    position: absolute;
+    left: 44.42%;
+    right: 4.82%;
+    top: 15%;
+    bottom: 78.74%;
+    
+    // font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 29px;
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-container{
+    position: relative;
+    top: 20rem;
+}
+
+.form-design{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    left: 4rem;
+}
+
+input{
+    width: 25rem;
+    margin-bottom: 15px;
+}
+
+
+button{
+    position: relative;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    left: 6.5rem;
+    top: 2rem;
+
+    background: #5352ED;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 3rem;
+}
+
+.forgot-pass{
+    position: relative;
+    top: 5rem;
+    left: 8.4rem;
+}
+
+.tag{
+ text-decoration: underline;
+ color: #5352ED;
+
+ &:hover{
+    color: #0909a2;
+ }
+}
+
+.Image{
+    position: absolute;
+    left: 12.70%;
+    right: 4.82%;
+    top: 13%;
+    bottom: 78.74%;
+}
+
+
+@media screen and (max-width: 850px) {
+    .container{
+        height: 44.5rem;
+        background: linear-gradient(to right, 
+        white 0%,
+        white 40%,
+        #5352ED 40%,
+        #5352ED 100% );
+    
+       
+    
+        img{
+            display: flex;
+            float: right;
+            width: 250px;
+            height: 250px;
+            margin-right: 1rem;
+            top: 25rem;
+            position: relative;
+        }
+    }
+    
+    .page-title{
+        position: absolute;
+        left: 50.42%;
+        right: 4.82%;
+        top: 20%;
+        bottom: 78.74%;
+        
+        // font-family: 'Inter';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 29px;
+        text-align: center;
+        
+        color: #FFFFFF;
+        
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    }
+}
