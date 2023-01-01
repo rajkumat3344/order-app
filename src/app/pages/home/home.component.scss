@@ -1,0 +1,36 @@
+.pic-container{
+    background-color: rgba(255, 131, 123, 0.5);
+    height: 400px;
+    width: 95%;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 290px;
+    margin-left: 45px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+img{
+    width: 400px;
+    position: relative;
+    top: 0;
+    float: right;
+}
+
+p{
+    color: #0A306A;
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    top: 5rem;
+    left: 3rem;
+}
+
+.logout{
+
+    &:hover{
+        background-color: #022AFF;
+        color: white;
+    }
+}

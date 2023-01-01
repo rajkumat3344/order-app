@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "order-app-48986": {
+      "hosting": {
+        "order-app": [
+          "order-app-48986"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "order-app-48986"
+  }
+}
