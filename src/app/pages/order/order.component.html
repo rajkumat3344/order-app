@@ -1,1 +1,70 @@
-<p>order works!</p>
+<section class="text-gray-600 body-font relative">
+    
+<div class="Img">
+    <svg (click)="back()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9.75L14.25 12m0 0l2.25 2.25M14.25 12l2.25-2.25M14.25 12L12 14.25m-2.58 4.92l-6.375-6.375a1.125 1.125 0 010-1.59L9.42 4.83c.211-.211.498-.33.796-.33H19.5a2.25 2.25 0 012.25 2.25v10.5a2.25 2.25 0 01-2.25 2.25h-9.284c-.298 0-.585-.119-.796-.33z" />
+      </svg>
+</div>
+  
+
+    <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Order</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Please place your order!🧳</p>
+        </div>
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+                <div class="p-2 w-1/2">
+                    <div class="relative">
+                        <label for="OrderId" class="leading-7 text-sm text-gray-600">OrderId</label>
+                        <input required #orderID type="text" id="OrderId" name="OrderId"
+                            class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            [(ngModel)]="orderid">
+                    </div>
+                </div>
+                <div class="p-2 w-1/2">
+                    <div class="relative">
+                        <label for="Firstname" class="leading-7 text-sm text-gray-600">Firstname</label>
+                        <input type="text" id="Firstname" name="Firstname"
+                            class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" [(ngModel)]="firstname">
+                    </div>
+                </div>
+                <div class="p-2 w-1/2">
+                    <div class="relative">
+                        <label for="Lastname" class="leading-7 text-sm text-gray-600">Lastname</label>
+                        <input type="text" id="Lastname" name="Lastname"
+                            class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" [(ngModel)]="lastname">
+                    </div>
+                </div>
+                <div class="p-2 w-1/2">
+                    <div class="relative">
+                        <label for="Address" class="leading-7 text-sm text-gray-600">Address</label>
+                        <input type="text" id="Address" name="Address"
+                            class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" [(ngModel)]="address">
+                    </div>
+                </div>
+                <div class="p-2 w-1/2">
+                    <div class="relative">
+                        <label for="Date" class="leading-7 text-sm text-gray-600">Date of Order</label>
+                        <input type="datetime-local" id="Date" name="Date"
+                            class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" [(ngModel)]="dateOfOrder">
+                    </div>
+                </div>
+                <div class="p-2 w-1/2">
+                    <div class="relative">
+                        <label for="Ouantity" class="leading-7 text-sm text-gray-600">Quantity</label>
+                        <input type="number" id="Ouantity" name="Ouantity"
+                            class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" [(ngModel)]="quantity">
+                    </div>
+                </div>
+                <div class="p-2 w-full">
+                    <button
+                        class="flex mx-auto my-10 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg"
+                        (click)="placeOrder(orderid)">Place
+                        Order</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

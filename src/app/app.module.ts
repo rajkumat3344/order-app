@@ -13,6 +13,8 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import {AngularFireModule} from '@angular/fire/compat';
 import { OrderComponent } from './pages/order/order.component';
+import { SuccessComponent } from './pages/messages/success/success.component';
+import { OrderListComponent } from './pages/order/orderlist/order-list/order-list.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { OrderComponent } from './pages/order/order.component';
     HomeComponent,
     ForgotPasswordComponent,
     NotFoundComponent,
-    OrderComponent
+    OrderComponent,
+    SuccessComponent,
+    OrderListComponent
   ],
   imports: [
     BrowserModule,

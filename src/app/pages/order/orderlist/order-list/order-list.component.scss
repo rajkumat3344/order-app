@@ -1,0 +1,26 @@
+.Img{
+    color: #343a40;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+   }
+
+svg{
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+
+    background-color: #dbe4ff;
+    border-radius: 2rem;
+}
+
+h1{
+    position: relative;
+    
+    left: 20rem;
+    font-size: 20px;
+    font-weight: 500;
+    color: tomato;
+    justify-content: center;
+}
